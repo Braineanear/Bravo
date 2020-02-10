@@ -10,9 +10,9 @@
     <!-- css links begin -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="./assets/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- css links end -->
 
@@ -25,10 +25,15 @@
 <body>
     <div class="container-fluid p-0 m-0">
         <div class="body_wrapper">
+            <!-- Header Begin -->
             <header id="Header">
+                <!-- Logo Begin -->
                 <div class="logo">
                     <a href="#"><img src="./assets/images/logo.png" alt="Logo" /></a>
                 </div>
+                <!-- Logo End -->
+
+                <!-- Navbar List Begin -->
                 <nav class="nav-wrapper">
                     <ul class="sidebar">
                         <li><a href="#" class="underline">Home</a></li>
@@ -38,14 +43,29 @@
                         <li><a href="#" class="underline">Contact</a></li>
                     </ul>
                 </nav>
+                <!-- Navbar List End -->
+
+                <!-- Trigger Button Begin -->
                 <a href="#0" class="trigger"><span></span></a>
+                <!-- Trigger Button End -->
             </header>
+            <!-- Header End -->
+
+            <!-- Page Body Begin -->
             <div class="body-content">
+                <!-- Home Section Begin -->
                 <section class="col-12 home">
+                    <!-- Home Overlay Begin -->
                     <div class="overlay"></div>
+                    <!-- Home Overlay End -->
+
+                    <!-- Home Video Begin -->
                     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
                         <source src="./assets/images/video1.mp4" type="video/mp4" />
                     </video>
+                    <!-- Home Video End -->
+
+                    <!-- Home Content Begin -->
                     <div class="home-content">
                         <small>Lorem ipsum</small>
                         <h3>
@@ -66,17 +86,24 @@
                             <span class="button-text">Learn More</span>
                         </button>
                     </div>
+                    <!-- Home Content End -->
                 </section>
+                <!-- Home Section End -->
+
+                <!-- Services Section Begin -->
                 <section class="col-12 services py-5 px-4">
-                    <h2>Our great services</h2>
-                    <p>
+                    <h2 data-aos="fade-right">Our great services</h2>
+                    <p data-aos="fade-left">
                         Lorem ipsum dolor, sit amet consectetur adipisicing
                         elit. Molestias, tenetur ullam omnis odit ex ducimus
                         pariatur vel provident. Possimus sequi ipsam quia
                         quam quis optio.
                     </p>
+
+                    <!-- Services Blocks Begin -->
                     <div class="services-blocks">
-                        <div class="service-block col-12 col-sm-6 col-md-4 col-xl-3">
+                        <!-- First Block Begin -->
+                        <div data-aos="fade-right" class="service-block col-12 col-sm-6 col-md-4 col-xl-3">
                             <img src="./assets/images/icon1.png" alt="icon1" />
                             <h3>Awesome Design</h3>
                             <p>
@@ -85,7 +112,10 @@
                                 cuppa.!
                             </p>
                         </div>
-                        <div class="service-block col-12 col-sm-6 col-md-4 col-xl-3">
+                        <!-- First Block End -->
+
+                        <!-- Second Block Begin -->
+                        <div data-aos="fade-down" class="service-block col-12 col-sm-6 col-md-4 col-xl-3">
                             <img src="./assets/images/icon2.png" alt="icon2" />
                             <h3>Easy Customize</h3>
                             <p>
@@ -94,7 +124,10 @@
                                 cuppa.!
                             </p>
                         </div>
-                        <div class="service-block col-12 col-sm-6 col-md-4 col-xl-3">
+                        <!-- Second Block End -->
+
+                        <!-- Third Block Begin -->
+                        <div data-aos="fade-left" class="service-block col-12 col-sm-6 col-md-4 col-xl-3">
                             <img src="./assets/images/icon3.png" alt="icon3" />
                             <h3>Extreme Security</h3>
                             <p>
@@ -103,9 +136,15 @@
                                 cuppa.!
                             </p>
                         </div>
+                        <!-- Third Block End -->
                     </div>
+                    <!-- Services Blocks End -->
                 </section>
-                <section class="portfolio p-4">
+                <!-- Services Section End -->
+
+                <!-- Portfolio Section Begin -->
+                <section class="portfolio p-5">
+                    <!-- Portfolio Head Menu Begin -->
                     <div class="portfolio-menu mt-2 mb-5">
                         <ul>
                             <li class="element" data-filter="*">All</li>
@@ -116,7 +155,11 @@
                             </li>
                         </ul>
                     </div>
+                    <!-- Portfilio Head Menu End -->
+
+                    <!-- Portfolio Items Begin -->
                     <div class="portfolio-item">
+                        <!-- Web Item Begin -->
                         <div class="item web col-lg-3 col-md-4 col-sm-6 col">
                             <a href="./assets/images/web2.png" class="image-popup-fit-width popup-btn">
                                 <img class="img-fluid" src="./assets/images/web2.png" alt="web2" />
@@ -127,6 +170,9 @@
                                 </div>
                             </a>
                         </div>
+                        <!-- Web Item End -->
+
+                        <!-- App Item Begin -->
                         <div class="item app col-lg-3 col-md-4 col-sm-6 col">
                             <a href="./assets/images/mobile1.jpg" class="image-popup-fit-width popup-btn">
                                 <img class="img-fluid" src="./assets/images/mobile1.jpg" alt="mobile1" />
@@ -137,6 +183,9 @@
                                 </div>
                             </a>
                         </div>
+                        <!-- App Item End -->
+
+                        <!-- Web Item Begin -->
                         <div class="item web col-lg-3 col-md-4 col-sm-6 col">
                             <a href="./assets/images/web2.png" class="image-popup-fit-width popup-btn">
                                 <img class="img-fluid" src="./assets/images/web2.png" alt="web2" />
@@ -147,6 +196,9 @@
                                 </div>
                             </a>
                         </div>
+                        <!-- Web Item End -->
+
+                        <!-- Graphics Item Begin -->
                         <div class="item graphics col-lg-3 col-md-4 col-sm-6 col">
                             <a href="./assets/images/graphics2.jpg" class="image-popup-fit-width popup-btn">
                                 <img class="img-fluid" src="./assets/images/graphics2.jpg" alt="graphics2" />
@@ -157,6 +209,9 @@
                                 </div>
                             </a>
                         </div>
+                        <!-- Graphics Item End -->
+
+                        <!-- App Item Begin -->
                         <div class="item app col-lg-3 col-md-4 col-sm-6 col">
                             <a href="./assets/images/mobile2.png" class="image-popup-fit-width popup-btn">
                                 <img class="img-fluid" src="./assets/images/mobile2.png" alt="mobile2" />
@@ -167,6 +222,9 @@
                                 </div>
                             </a>
                         </div>
+                        <!-- App Item End -->
+
+                        <!-- Web Item Begin -->
                         <div class="item web col-lg-3 col-md-4 col-sm-6 col">
                             <a href="./assets/images/web3.png" class="image-popup-fit-width popup-btn">
                                 <img class="img-fluid" src="./assets/images/web3.png" alt="web3" />
@@ -177,6 +235,9 @@
                                 </div>
                             </a>
                         </div>
+                        <!-- Web Item End -->
+
+                        <!-- App Item Begin -->
                         <div class="item app col-lg-3 col-md-4 col-sm-6 col">
                             <a href="./assets/images/mobile3.jpg" class="image-popup-fit-width popup-btn">
                                 <img class="img-fluid" src="./assets/images/mobile3.jpg" alt="mobile3" />
@@ -187,6 +248,9 @@
                                 </div>
                             </a>
                         </div>
+                        <!-- App Item End -->
+
+                        <!-- Web Item Begin -->
                         <div class="item web col-lg-3 col-md-4 col-sm-6 col">
                             <a href="./assets/images/web4.png" class="image-popup-fit-width popup-btn">
                                 <img class="img-fluid" src="./assets/images/web4.png" alt="web4" />
@@ -197,6 +261,9 @@
                                 </div>
                             </a>
                         </div>
+                        <!-- Web Item End -->
+
+                        <!-- Graphics Item Begin -->
                         <div class="item graphics col-lg-3 col-md-4 col-sm-6 col">
                             <a href="./assets/images/graphics4.jpg" class="image-popup-fit-width popup-btn">
                                 <img class="img-fluid" src="./assets/images/graphics4.jpg" alt="graphics4" />
@@ -207,6 +274,9 @@
                                 </div>
                             </a>
                         </div>
+                        <!-- Graphics Item End -->
+
+                        <!-- App Item Begin -->
                         <div class="item app col-lg-3 col-md-4 col-sm-6 col">
                             <a href="./assets/images/mobile4.jpg" class="image-popup-fit-width popup-btn">
                                 <img class="img-fluid" src="./assets/images/mobile4.jpg" alt="mobile4" />
@@ -217,6 +287,9 @@
                                 </div>
                             </a>
                         </div>
+                        <!-- App Item End -->
+                        
+                        <!-- Web Item Begin -->
                         <div class="item web col-lg-3 col-md-4 col-sm-6 col">
                             <a href="./assets/images/web5.png" class="image-popup-fit-width popup-btn">
                                 <img class="img-fluid" src="./assets/images/web5.png" alt="web5" />
@@ -227,6 +300,9 @@
                                 </div>
                             </a>
                         </div>
+                        <!-- Web Item End -->
+                        
+                        <!-- App Item Begin -->
                         <div class="item app col-lg-3 col-md-4 col-sm-6 col">
                             <a href="./assets/images/mobile5.png" class="image-popup-fit-width popup-btn">
                                 <img class="img-fluid" src="./assets/images/mobile5.png" alt="mobile5" />
@@ -237,6 +313,9 @@
                                 </div>
                             </a>
                         </div>
+                        <!-- App Item End -->
+
+                        <!-- Web Item Begin -->
                         <div class="item web col-lg-3 col-md-4 col-sm-6 col">
                             <a href="./assets/images/web6.png" class="image-popup-fit-width popup-btn">
                                 <img class="img-fluid" src="./assets/images/web6.png" alt="web6" />
@@ -247,6 +326,9 @@
                                 </div>
                             </a>
                         </div>
+                        <!-- Web Item End -->
+                        
+                        <!-- Graphics Item Begin -->
                         <div class="item graphics col-lg-3 col-md-4 col-sm-6 col">
                             <a href="./assets/images/graphics6.jpg" class="image-popup-fit-width popup-btn">
                                 <img class="img-fluid" src="./assets/images/graphics6.jpg" alt="graphics6" />
@@ -257,6 +339,9 @@
                                 </div>
                             </a>
                         </div>
+                        <!-- Graphics Item End -->
+
+                        <!-- App Item Begin -->
                         <div class="item app col-lg-3 col-md-4 col-sm-6 col">
                             <a href="./assets/images/mobile6.png" class="image-popup-fit-width popup-btn">
                                 <img class="img-fluid" src="./assets/images/mobile6.png" alt="mobile6" />
@@ -267,6 +352,9 @@
                                 </div>
                             </a>
                         </div>
+                        <!-- App Item End -->
+
+                        <!-- Web Item Begin -->
                         <div class="item web col-lg-3 col-md-4 col-sm-6 col">
                             <a href="./assets/images/web7.jpg" class="image-popup-fit-width popup-btn">
                                 <img class="img-fluid" src="./assets/images/web7.jpg" alt="web7" />
@@ -277,6 +365,9 @@
                                 </div>
                             </a>
                         </div>
+                        <!-- Web Item End -->
+                        
+                        <!-- Graphics Item Begin -->
                         <div class="item graphics col-lg-3 col-md-4 col-sm-6 col">
                             <a href="./assets/images/graphics7.jpg" class="image-popup-fit-width popup-btn">
                                 <img class="img-fluid" src="./assets/images/graphics7.jpg" alt="graphics7" />
@@ -287,6 +378,9 @@
                                 </div>
                             </a>
                         </div>
+                        <!-- Graphics Item End -->
+
+                        <!-- App Item Begin -->
                         <div class="item app col-lg-3 col-md-4 col-sm-6 col">
                             <a href="./assets/images/mobile7.png" class="image-popup-fit-width popup-btn">
                                 <img class="img-fluid" src="./assets/images/mobile7.png" alt="mobile7" />
@@ -297,6 +391,9 @@
                                 </div>
                             </a>
                         </div>
+                        <!-- App Item End -->
+
+                        <!-- Web Item Begin -->
                         <div class="item web col-lg-3 col-md-4 col-sm-6 col">
                             <a href="./assets/images/web8.jpg" class="image-popup-fit-width popup-btn">
                                 <img class="img-fluid" src="./assets/images/web8.jpg" alt="web8" />
@@ -307,6 +404,9 @@
                                 </div>
                             </a>
                         </div>
+                        <!-- Web Item End -->
+
+                        <!-- Graphics Item Begin -->
                         <div class="item graphics col-lg-3 col-md-4 col-sm-6 col">
                             <a href="./assets/images/graphics8.jpg" class="image-popup-fit-width popup-btn">
                                 <img class="img-fluid" src="./assets/images/graphics8.jpg" alt="graphics8" />
@@ -317,31 +417,237 @@
                                 </div>
                             </a>
                         </div>
+                        <!-- Graphics Item End -->
                     </div>
+                    <!-- Portfolio Items End -->
+
+                    <!-- Portfolio Button Begin -->
                     <div class="box col-12">
                         <a href="#" class="btn btn-white btn-animation-1">View More</a>
                     </div>
-                    <div class="box col-12">
-                        <a href="#" class="btn btn-white btn-animation-1">View More</a>
-                    </div>
-                    <div class="box col-12">
-                        <a href="#" class="btn btn-white btn-animation-1">View More</a>
-                    </div>
-                    <div class="box col-12">
-                        <a href="#" class="btn btn-white btn-animation-1">View More</a>
-                    </div>
-                    <div class="box col-12">
-                        <a href="#" class="btn btn-white btn-animation-1">View More</a>
-                    </div>
-                    <div class="box col-12">
-                        <a href="#" class="btn btn-white btn-animation-1">View More</a>
-                    </div>
-                    <!-- don't delete -->
+                    <!-- Portfolio Button End -->
                 </section>
+                <!-- Portfolio Section End -->
+
+                <!-- Feature Section Begin -->
+                <section class="feature flex-row-reverse">
+                    <!-- Right Image Begin -->
+                    <div data-aos="fade-left" class="col-lg-6 right-feature">
+                        <div class="bg_img"></div>
+                    </div>
+                    <!-- Right Image End -->
+
+                    <!-- Left Content Begin -->
+                    <div data-aos="fade-right" class="col-lg-6 left-feature">
+                        <div class="feature-content">
+                            <h2>Lorem, ipsum<br>Lorem, ipsum dolor.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio autem perferendis ab
+                                laudantium id esse nobis reprehenderit ipsum sequi omnis culpa quis asperiores atque
+                                enim, hic possimus dolorum quaerat nostrum.!</p>
+                            <a href="#" class="btn_three btn_hover">Try it Free</a>
+                            <a href="#" class="btn_three btn_six btn_hover">Get a Demo</a>
+                        </div>
+                    </div>
+                    <!-- Left Content End -->
+                </section>
+                <!-- Feature Section End -->
+
+                <!-- Feature Section Begin -->
+                <section class="feature">
+                    <!-- Right Image Begin -->
+                    <div data-aos="fade-right" class="col-lg-6 right-feature">
+                        <div class="bg_img bg_two"></div>
+                    </div>
+                    <!-- Right Image End -->
+                    
+                    <!-- Left Content Begin -->
+                    <div data-aos="fade-left" class="col-lg-6 left-feature">
+                        <div class="feature-content">
+                            <h2>Lorem, ipsum<br>Lorem, ipsum dolor.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio autem perferendis ab
+                                laudantium id esse nobis reprehenderit ipsum sequi omnis culpa quis asperiores atque
+                                enim, hic possimus dolorum quaerat nostrum.!</p>
+                            <a href="#" class="btn_three btn_hover">Try it Free</a>
+                            <a href="#" class="btn_three btn_six btn_hover">Get a Demo</a>
+                        </div>
+                    </div>
+                    <!-- Left Content End -->
+                </section>
+                <!-- Feature Section End -->
+
+                <!-- Team Section Begin -->
+                <section class="team">
+                    <!-- Team Head Begin -->
+                    <div data-aos="fade-down" class="heading">
+                        Our Team
+                    </div>
+                    <!-- Team Head End -->
+                    
+                    <!-- Team Container Begin -->
+                    <div class="team-container">
+                        <!-- Swiper Begin -->
+                        <div data-aos="fade-up" class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="wrapper">
+                                        <div class="data">
+                                            <div class="content">
+                                                <span class="author">lorem lorem</span>
+                                                <h1 class="title"><a href="#">lorem lorem lorem loremlorem lorem</a>
+                                                </h1>
+                                                <p class="text">lorem lorem loremlorem lorem loremlorem lorem loremlorem
+                                                    lorem loremlorem lorem loremlorem lorem lorem.</p>
+                                                <a href="#" class="button">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="wrapper">
+                                        <div class="data">
+                                            <div class="content">
+                                                <span class="author">lorem lorem</span>
+                                                <h1 class="title"><a href="#">lorem lorem loremlorem lorem lorem</a>
+                                                </h1>
+                                                <p class="text">lorem lorem loremlorem lorem loremlorem lorem loremlorem
+                                                    lorem loremlorem lorem lorem.</p>
+                                                <a href="#" class="button">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="wrapper">
+                                        <div class="data">
+                                            <div class="content">
+                                                <span class="author">lorem lorem</span>
+                                                <h1 class="title"><a href="#">lorem lorem loremlorem lorem lorem</a>
+                                                </h1>
+                                                <p class="text">lorem lorem loremlorem lorem loremlorem lorem loremlorem
+                                                    lorem loremlorem lorem loremlorem lorem loremlorem lorem lorem.</p>
+                                                <a href="#" class="button">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="wrapper">
+                                        <div class="data">
+                                            <div class="content">
+                                                <span class="author">lorem lorem</span>
+                                                <h1 class="title"><a href="#">lorem lorem lorem loremlorem lorem</a>
+                                                </h1>
+                                                <p class="text">lorem lorem loremlorem lorem loremlorem lorem loremlorem
+                                                    lorem loremlorem lorem loremlorem lorem lorem.</p>
+                                                <a href="#" class="button">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="wrapper">
+                                        <div class="data">
+                                            <div class="content">
+                                                <span class="author">lorem lorem</span>
+                                                <h1 class="title"><a href="#">lorem lorem loremlorem lorem lorem</a>
+                                                </h1>
+                                                <p class="text">lorem lorem loremlorem lorem loremlorem lorem loremlorem
+                                                    lorem loremlorem lorem lorem.</p>
+                                                <a href="#" class="button">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="wrapper">
+                                        <div class="data">
+                                            <div class="content">
+                                                <span class="author">lorem lorem</span>
+                                                <h1 class="title"><a href="#">lorem lorem loremlorem lorem lorem</a>
+                                                </h1>
+                                                <p class="text">lorem lorem loremlorem lorem loremlorem lorem loremlorem
+                                                    lorem loremlorem lorem loremlorem lorem loremlorem lorem lorem.</p>
+                                                <a href="#" class="button">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Swiper End -->
+
+                        <!-- Pagination Begin -->
+                        <div class="team-pagination"></div>
+                        <!-- Pagination End -->
+                    </div>
+                    <!-- Team Container End -->
+                </section>
+                <!-- Team Section End -->
+
+                <!-- Company Section Begin -->
+                <section class="company">
+                    <div class="container">
+                        <h2 data-aos="fade-up">Market leaders use app to nrich
+                            <br>their brand &amp; business.</h2>
+                        
+                        <!-- Company Logos Begin -->
+                        <div class="row partner_info">
+                            <div class="logo_item" data-aos="fade-up">
+                                <a href="#"><img src="./assets/images/logo_01.png" alt=""></a>
+                            </div>
+                            <div class="logo_item" data-aos="fade-up">
+                                <a href="#"><img src="./assets/images/logo_02.png" alt=""></a>
+                            </div>
+                            <div class="logo_item" data-aos="fade-up">
+                                <a href="#"><img src="./assets/images/logo_03.png" alt=""></a>
+                            </div>
+                            <div class="logo_item" data-aos="fade-up">
+                                <a href="#"><img src="./assets/images/logo_04.png" alt=""></a>
+                            </div>
+                            <div class="logo_item" data-aos="fade-up">
+                                <a href="#"><img src="./assets/images/logo_05.png" alt=""></a>
+                            </div>
+                            <div class="logo_item" data-aos="fade-up">
+                                <a href="#"><img src="./assets/images/logo_03.png" alt=""></a>
+                            </div>
+                            <div class="logo_item" data-aos="fade-up">
+                                <a href="#"><img src="./assets/images/logo_04.png" alt=""></a>
+                            </div>
+                            <div class="logo_item" data-aos="fade-up">
+                                <a href="#"><img src="./assets/images/logo_05.png" alt=""></a>
+                            </div>
+                        </div>
+                        <!-- Company Logos End -->
+                    </div>
+                </section>
+                <!-- Company Section End -->
+
+                <!-- Footer Begin -->
+                <footer class="footer">
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="index.html" class="f-logo"><img src="./assets/images/logo.png" alt="logo"></a>
+                            <p class="mt_40">Copyright © 2020 Desing by <a href="www.brainean.tech">Brainean</a></p>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Footer End -->
             </div>
+            <!-- Page Body End -->
         </div>
     </div>
 
+    <!-- JavaScript Begin -->
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
@@ -349,7 +655,8 @@
     <script src="./assets/js/isotope.pkgd.js"></script>
     <script src="./assets/js/jquery.magnific-popup.js"></script>
     <script src="./assets/js/jquery.fancybox.min.js"></script>
+    <script src="./assets/js/swiper.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    <!-- JavaScript End -->
 </body>
-
 </html>

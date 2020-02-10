@@ -15,16 +15,6 @@ jQuery(document).ready(function ($) {
 		$('.body-content').toggleClass('visible-sidebar');
 	});
 
-	$('.go-back').on('click', function (event) {
-		event.preventDefault();
-		$('.sidebar').removeClass('moves-out');
-	});
-
-	$('.sub-trigger').on('click', function (event) {
-		event.preventDefault();
-		$('.sidebar').toggleClass('moves-out');
-	});
-
 	function moveNavigation() {
 		var navigation = $('.nav-wrapper');
 		var screenSize = checkWindowWidth();
@@ -33,7 +23,6 @@ jQuery(document).ready(function ($) {
 			navigation.detach();
 			navigation.insertBefore('.trigger');
 		} else {
-			//mobile screen - insert navigation after .body-content element
 			navigation.detach();
 			navigation.insertAfter('.body-content');
 		}
@@ -55,10 +44,12 @@ jQuery(document).ready(function ($) {
 		}
 
 	});
+
 	$('.portfolio-item').isotope({
 		itemSelector: '.item',
 		layoutMode: 'fitRows'
 	});
+
 	$('.portfolio-menu ul li').click(function () {
 		$('.portfolio-menu ul li').removeClass('active');
 		$(this).addClass('active');
@@ -91,6 +82,38 @@ jQuery(document).ready(function ($) {
 		img.css('max-width', 'auto');
 	}
 
+	if (window.innerWidth < 768) {
+		var swiper = new Swiper('.team-container', {
+			spaceBetween: 0,
+			pagination: {
+				el: '.team-pagination',
+				clickable: true,
+			},
+			autoplay: {
+				delay: 5000,
+			},
+		});
+	} else {
+		var swiper = new Swiper('.team-container', {
+			slidesPerView: 2,
+			spaceBetween: 0,
+			pagination: {
+				el: '.team-pagination',
+				clickable: true,
+			},
+			autoplay: {
+				delay: 5000,
+			},
 
+		});
+	}
+	
+	var swiper2 = new Swiper('.company-container');
 
+	AOS.init();
+	AOS.init({
+		duration: 1500,
+		easing: 'ease-in-cubic',
+		offset: 50
+	});
 });
